@@ -17,3 +17,42 @@ asideContent.addEventListener('mouseleave', function() {
     asideContent.style.display = 'none';
 });
 
+const inputChecked = document.querySelector('.pricing__switch');
+
+inputChecked.addEventListener('change', function(e) {
+    const checkbox = this.querySelector('input[type="checkbox"]');
+    const yearlyElements = document.querySelectorAll('.offer__yearly');
+    const priceElements = document.querySelectorAll('.offer__price');
+    const switchButtons = document.querySelectorAll('.pricing__time');
+    
+
+    const originalPrices = Array.from(priceElements).map(el => parseInt(el.innerHTML));
+    
+   
+    
+    yearlyElements.forEach(el => {
+        if(checkbox.checked) {
+            el.style.display = 'block';
+         
+          
+        } else {
+            el.style.display = 'none';
+            
+           
+        }
+    })
+    priceElements.forEach((el,index) => {
+        if(checkbox.checked) {
+            el.innerHTML = originalPrices[index] - 10;
+        } else {
+            el.innerHTML = originalPrices[index] + 10;
+        }
+    })
+    if (checkbox.checked) {
+        switchButtons[0].classList.remove('pricing__time--bold');
+        switchButtons[1].classList.add('pricing__time--bold');
+    } else {
+        switchButtons[0].classList.add('pricing__time--bold');
+        switchButtons[1].classList.remove('pricing__time--bold');
+    }
+})

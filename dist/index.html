@@ -10,6 +10,7 @@
     <script src="js/app.min.js" defer></script>
 </head>
 <body>
+    <div class="triangle"></div>
     <nav class="navigation">
         <div class="navigation__logo">
             <span class="navigation__logo-text"><i class='bx bxs-leaf'></i></i></span>
@@ -124,7 +125,6 @@
                           <h2>Featured Contract Templates</h2>
                           <div class="navigation__dropdown-item-template">Free Contract Maker</div>
                           <div class="navigation__dropdown-item-template">Social Media Management Contract Template</div>
-                          <div class="navigation__dropdown-item-template">Graphic Design Contract Template</div>
                           <div class="navigation__dropdown-item-template">Digital Marketing Contract Template</div>
                           <p>See All Templates</p>
                         </div>
@@ -144,12 +144,12 @@
         <div class="pricing__header">
             <h1 class="pricing__header-title">Plans & Pricing</h1>
             <div class="pricing__header-switch">
-                <span class="pricing__time">MONTHLY</span>
+                <span class="pricing__time pricing__time--bold">MONTHLY</span>
                 <label class="pricing__switch">
                     <input type="checkbox">
                     <span class="pricing__slider"></span>
                 </label>
-                <span class="pricing__time">YEARLY</span>
+                <span class="pricing__time pricing__time--bold">YEARLY</span>
                 <span class="pricing__months">2 months free!</span>
                 <span class="material-symbols-outlined pricing__arrow">
                     switch_access_shortcut
@@ -158,11 +158,79 @@
         </div>
     </section>
     <section class="offer">
-        <div class="offer__item"></div>
-        <div class="offer__item"></div>
-        <div class="offer__item"></div>
+        <div class="offer__item">
+            <div class="offer__item-header">
+                <h3 class="offer__item-title">Starter</h3>
+                <p class="offer__item-description">Ideal for freelancing and contractors just starting out a business</p>
+            </div>
+            <div class="offer__item-price">
+                <span class="offer__currency">$</span>
+                <span class="offer__price">24</span>
+                <span class="offer__monthly">/month</span>
+                <span class="offer__yearly">Billed yearly</span>
+            </div>
+            <div class="offer__features-list">
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> All Templates</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Unlimited Clients & Projects</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Invoicing & Payments</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Proposals & Contracts</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Tasks & Time Tracking</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Client CRM</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Expense Tracking</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Up to 5 Project Collaborators</div>
+            </div>
+            <button class="offer__button">Start free</button>
+        </div>
+        <div class="offer__item offer__item--professional">
+            <div class="offer__item-header">
+                <h3 class="offer__item-title">Professional</h3>
+                <p class="offer__item-description">Everything a growing independent business needs to thrive.</p>
+            </div>
+            <div class="offer__item-price">
+                <span class="offer__currency">$</span>
+                <span class="offer__price">39</span>
+                <span class="offer__monthly">/month</span>
+                <span class="offer__yearly">Billed yearly</span>
+            </div>
+            <div class="offer__features-list">
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> All Starter Features</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Custom Branding</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Forms & Questionnaires</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Workflow Automation</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Client Portal</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Calendar Sync <span>NEW</span></div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Zapier Integration</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Accountant Access</div>
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Up to 15 Project Collaborators</div>
+            </div>
+            <button class="offer__button">Start free</button>
+        </div>
+        <div class="offer__item">
+            <div class="offer__item-header">
+                <h3 class="offer__item-title">Business</h3>
+                <p class="offer__item-description">The perfect package for small businesses and agencies.</p>
+            </div>
+            <div class="offer__item-price">
+                <span class="offer__currency">$</span>
+                <span class="offer__price">79</span>
+                <span class="offer__monthly">/month</span>
+                <span class="offer__yearly">Billed yearly</span>
+            </div>
+            <div class="offer__features-list">
+                <div class="offer__feature"><i class='bx bx-check offer__icon'></i> All Professional Features</div>
+            <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Priority Support</div>
+            <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Advanced Reporting</div>
+            <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Unlimited Project Collaborators</div>
+            <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Dedicated Account Manager</div>
+            <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Team Workspaces</div>
+            <div class="offer__feature"><i class='bx bx-check offer__icon'></i> API Access</div>
+            <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Connect Multiple Bank Accounts</div>
+            <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Unlimited Subcontractors</div>
+            <div class="offer__feature"><i class='bx bx-check offer__icon'></i> Unlimited Project Collaborators</div>
+            </div>
+            <button class="offer__button">Start free</button>
+        </div>
     </section>
-
    
 </body>
 </html>

@@ -27,6 +27,10 @@
       .pricing__time {
         color: $secondary-color;
         font-size: 12px;
+        &--bold {
+          color: black;
+          font-weight: 500;
+        }
       }
       .pricing__months {
         position: absolute;
