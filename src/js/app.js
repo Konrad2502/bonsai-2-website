@@ -56,3 +56,22 @@ inputChecked.addEventListener('change', function(e) {
         switchButtons[1].classList.remove('pricing__time--bold');
     }
 })
+
+
+const arrows = document.querySelectorAll('.question__item-icon')
+const descriptions = document.querySelectorAll('.question__item-description');
+
+arrows.forEach((arrow,index) => {
+    arrow.addEventListener('click', function() {
+        
+        descriptions.forEach((desc, descIndex) => {
+            if(descIndex !== index) {
+                desc.classList.remove('question__item-description--active');
+                arrows[descIndex].classList.remove('question__item-icon--rotated');
+            }
+        })
+        descriptions[index].classList.toggle('question__item-description--active');
+        this.classList.toggle('question__item-icon--rotated');
+        
+    })
+})
