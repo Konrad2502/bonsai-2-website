@@ -31,7 +31,8 @@
 
             h3 {
                 margin: 0;
-                font-size: 18px;
+                font-size: 16px;
+                transition: all 0.3s ease;
                 &:hover {
                     color: $primary-color;
                 }
@@ -39,6 +40,7 @@
 
             .question__item-icon {
                 font-size: 26px;
+                transition: transform 0.3s ease;
                 &--rotated {
                     transform: rotate(180deg)
                 }
@@ -59,4 +61,19 @@
 }
  .question__item-description--active {
     display: block; 
+}
+
+@media only screen and (max-width: 600px) {
+    .question {
+        &__title {
+            font-size: 20px;
+        }
+        &__item {
+            &-header {
+                h3 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }

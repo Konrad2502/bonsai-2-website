@@ -24,11 +24,17 @@ inputChecked.addEventListener('change', function(e) {
     const yearlyElements = document.querySelectorAll('.offer__yearly');
     const priceElements = document.querySelectorAll('.offer__price');
     const switchButtons = document.querySelectorAll('.pricing__time');
-    
-
+    const priceContainers = document.querySelectorAll('.offer__item-price');
+   console.log(priceContainers);
     const originalPrices = Array.from(priceElements).map(el => parseInt(el.innerHTML));
     
-   
+   priceContainers.forEach(cont => {
+    if(checkbox.checked) {
+        cont.style.paddingBottom = '28px'
+    } else {
+        cont.style.paddingBottom = '13px'
+    }
+   })
     
     yearlyElements.forEach(el => {
         if(checkbox.checked) {
