@@ -5,7 +5,7 @@ Built with Vanilla JavaScript (ES6) and SCSS using the BEM methodology, fully re
 
 🌍 Live Demo
 
-🔗 (optional – add your Netlify/Vercel link here)
+🔗 https://bonsai-pricing-website.netlify.app/
 
 📸 Preview
 
